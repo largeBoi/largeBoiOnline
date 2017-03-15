@@ -1,3 +1,4 @@
+//comment
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
@@ -59,9 +60,9 @@ int loadData(LLNode **list, char *filename, int verbose, int reverse)
 			printf("Loaded [%s]\n", data.string);
 
 		if (reverse)
-			(*list) = llAppend((*list), llNewNode(&data));
-		else 
 			(*list) = llPrepend((*list), llNewNode(&data));
+		else 
+			(*list) = llAppend((*list), llNewNode(&data));
 
 		if (verbose > 1)
 		{

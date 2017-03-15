@@ -1,4 +1,4 @@
-
+CC = gcc
 CFLAGS		= -g -Wall
 OBJS		= LLNode.o main.o
 
